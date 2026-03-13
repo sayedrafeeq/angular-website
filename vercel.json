@@ -6,18 +6,22 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/my-angular-app/browser"
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$)",
+      "dest": "/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
   ],
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/my-angular-app/browser",
+  "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "angular"
 }
