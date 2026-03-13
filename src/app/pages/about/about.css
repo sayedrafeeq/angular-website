@@ -1,0 +1,181 @@
+.about-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.about-section:last-child {
+  border-bottom: none;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.about-hero .about-container {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1976d2;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.value-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.value-card h3 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Team Stats */
+.team-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Experience List */
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.experience-list li {
+  padding: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+  line-height: 1.8;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.experience-list li:last-child {
+  border-bottom: none;
+}
+
+.experience-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.experience-list strong {
+  color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}

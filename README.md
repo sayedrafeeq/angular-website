@@ -1,59 +1,130 @@
-# MyAngularApp
+# My Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+A modern Angular application built with Angular 21, featuring Angular Material for UI components and server-side rendering (SSR) support.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Angular 21** - Latest version of Angular framework
+- **Angular Material** - Beautiful and accessible UI components
+- **Server-Side Rendering (SSR)** - Improved SEO and performance
+- **TypeScript** - Type-safe development
+- **Vitest** - Modern testing framework
 
+## 📋 Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v11.10.0 or higher)
+
+## 🛠️ Installation
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone <repository-url>
+cd angular-website
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Install dependencies:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🏃‍♂️ Development Server
 
+Run the development server:
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-To build the project run:
+## 🏗️ Build
 
+Build the application for production:
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 🧪 Testing
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
+Run the unit tests:
 ```bash
-ng test
+npm test
 ```
 
-## Running end-to-end tests
+## 📦 Available Scripts
 
-For end-to-end (e2e) testing, run:
+- `npm start` - Starts the development server
+- `npm run build` - Builds the application for production
+- `npm run watch` - Builds the application in watch mode for development
+- `npm test` - Runs the unit tests
+- `npm run serve:ssr:my-angular-app` - Runs the SSR server
 
-```bash
-ng e2e
+## 🎨 Project Structure
+
+```
+src/
+├── app/                 # Angular application components
+├── assets/              # Static assets
+├── environments/        # Environment configurations
+├── main.ts              # Application entry point
+├── main.server.ts       # SSR entry point
+├── server.ts            # SSR server configuration
+├── material-theme.scss  # Angular Material theme
+└── styles.css           # Global styles
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🧭 Dependencies
 
-## Additional Resources
+### Core Dependencies
+- `@angular/core` - Angular framework core
+- `@angular/common` - Angular common utilities
+- `@angular/router` - Angular routing
+- `@angular/forms` - Angular forms
+- `@angular/material` - Angular Material UI components
+- `@angular/cdk` - Angular Component Development Kit
+- `@angular/ssr` - Angular Server-Side Rendering
+- `express` - Node.js web framework
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Development Dependencies
+- `@angular/cli` - Angular command-line interface
+- `@angular/build` - Angular build tools
+- `typescript` - TypeScript compiler
+- `vitest` - Modern testing framework
+- `jsdom` - DOM implementation for testing
+
+## 🔧 Configuration
+
+### Code Formatting
+This project uses Prettier for code formatting with the following configuration:
+- Print width: 100 characters
+- Single quotes
+- Angular parser for HTML files
+
+### Build Configuration
+- Development mode: No optimization, source maps enabled
+- Production mode: Full optimization, output hashing enabled
+- Budget limits configured for bundle size monitoring
+
+## 🌐 Deployment
+
+### Vercel Deployment
+This project is configured for easy deployment to Vercel. See `VERCEL_DEPLOYMENT.md` for detailed instructions.
+
+**Quick Deploy:**
+```bash
+npm i -g vercel
+vercel
+```
+
+### Other Deployment Options
+For other deployment methods, refer to the `DEPLOYMENT_FILES_GUIDE.md` file in the project root.
+
+## 📄 License
+
+This project is private.
+
+---
+
+Built with ❤️ using Angular 21

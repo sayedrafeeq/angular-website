@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "my-angular-app",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/my-angular-app/browser"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/my-angular-app/browser",
+  "installCommand": "npm install",
+  "framework": "angular"
+}

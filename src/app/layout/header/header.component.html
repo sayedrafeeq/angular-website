@@ -1,0 +1,22 @@
+<header class="app-header__container">
+  <div class="app-header__logo">
+    <h1>My Website</h1>
+  </div>
+
+  <nav class="app-header__nav" role="navigation" aria-label="Main navigation">
+    <ul class="app-header__nav-list">
+      @for (link of navLinks; track link.path) {
+        <li class="app-header__nav-item">
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+            class="app-header__nav-link"
+            [attr.aria-current]="link.path === '/' ? 'page' : null">
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>
