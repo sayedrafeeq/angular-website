@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --output-path dist",
+    "build": "ng build --configuration production",
     "build:ssr": "ng build && npm run build:server",
     "build:server": "ng run my-angular-app:server",
     "watch": "ng build --watch --configuration development",
