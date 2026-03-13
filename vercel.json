@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "ng build --configuration production --output-path=dist",
+  "buildCommand": "ng build --configuration production",
   "outputDirectory": "dist/browser",
   "installCommand": "npm install",
   "framework": "angular",
